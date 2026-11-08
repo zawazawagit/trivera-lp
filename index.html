@@ -43,7 +43,7 @@
       <img src="images/hero.png" alt="建設中のビルを見上げる2人の社員" class="fv__img">
       <div class="fv__inner">
         <p class="label fv__label">BUILD YOUR FUTURE</p>
-        <h1 class="fv__title">街の未来も、<br>自分の未来も、<br>つくっていく。</h1>
+        <h1 class="fv__title">街の未来も、<br>自分の未来も、<br>つくっていく。<span class="fv__slash fv__slash--a" aria-hidden="true"></span><span class="fv__slash fv__slash--b" aria-hidden="true"></span></h1>
         <p class="fv__lead">好きな仕事を、好きなままで。<br>安心して挑戦できる環境が、ここにある。</p>
         <a href="#entry" class="btn btn--primary fv__btn">まずは説明会で話を聞く<span aria-hidden="true">→</span></a>
       </div>
@@ -51,34 +51,36 @@
 
     <!-- ===== 02 NUMBERS ===== -->
     <section class="numbers">
-      <div class="numbers__row">
-        <p class="numbers__title reveal">数字で知る、<br class="pc-only">TRIVERAの働き方。</p>
-        <dl class="numbers__list reveal-group" data-count-group>
-          <div class="numbers__item">
-            <dt>月平均残業</dt>
-            <dd><span class="num">17</span><span class="unit">時間</span></dd>
-          </div>
-          <div class="numbers__item">
-            <dt>有給取得率</dt>
-            <dd><span class="num">71</span><span class="unit unit--pct">%</span></dd>
-          </div>
-          <div class="numbers__item">
-            <dt>女性比率</dt>
-            <dd><span class="num">40</span><span class="unit unit--pct">%</span></dd>
-          </div>
-          <div class="numbers__item">
-            <dt>平均年齢</dt>
-            <dd><span class="num">37.2</span><span class="unit">歳</span></dd>
-          </div>
-        </dl>
+      <div class="numbers__box">
+        <div class="numbers__row">
+          <p class="numbers__title reveal"><span class="numbers__tag">数字で知る</span><span class="numbers__title-sm">TRIVERAの</span><span class="numbers__title-lg">働き方。</span></p>
+          <dl class="numbers__list reveal-group" data-count-group>
+            <div class="numbers__item">
+              <dt>月平均残業</dt>
+              <dd><span class="num">17</span><span class="unit">時間</span></dd>
+            </div>
+            <div class="numbers__item">
+              <dt>有給取得率</dt>
+              <dd><span class="num">71</span><span class="unit unit--pct">%</span></dd>
+            </div>
+            <div class="numbers__item">
+              <dt>女性比率</dt>
+              <dd><span class="num">40</span><span class="unit unit--pct">%</span></dd>
+            </div>
+            <div class="numbers__item">
+              <dt>平均年齢</dt>
+              <dd><span class="num">37.2</span><span class="unit">歳</span></dd>
+            </div>
+          </dl>
+        </div>
+        <p class="note numbers__note">※数値は課題資料上の設定です。</p>
       </div>
-      <p class="note numbers__note">※数値は課題資料上の設定です。</p>
     </section>
 
     <!-- ===== 03 PEOPLE ===== -->
     <section class="people" id="people">
-      <p class="label label--center">PEOPLE</p>
-      <h2 class="people__title reveal">現場には、<br class="sp-only">それぞれの<br><span class="marker">想い</span>がある。</h2>
+      <p class="label people__label">PEOPLE</p>
+      <h2 class="people__title reveal"><span class="people__title-l">現場には、<br>それぞれの</span><span class="people__em">”想い”</span><span class="people__title-r">がある。</span></h2>
       <div class="people__body reveal-group">
         <figure class="people__main">
           <img src="images/people-main.png" alt="笑顔で話す女性社員">
@@ -156,8 +158,13 @@
       <img src="images/city-lines.png" alt="" class="job__lines reveal" aria-hidden="true">
       <div class="job__list reveal-group">
         <div class="job__item">
-          <h3 class="job__name">建築</h3>
-          <p class="job__text">人々が集い、暮らす<br class="pc-only">空間をつくる。</p>
+          <figure class="job__photo">
+            <img src="images/job-architecture.png" alt="模型と図面に向き合う女性建築家">
+            <figcaption>
+              <h3 class="job__name">建築</h3>
+              <p class="job__text"><span>人々が集い、暮らす</span><br><span>空間をつくる。</span></p>
+            </figcaption>
+          </figure>
           <div class="job__roles">
             <div class="job__role">
               <p class="job__role-name">施工管理</p>
@@ -170,8 +177,13 @@
           </div>
         </div>
         <div class="job__item">
-          <h3 class="job__name">土木</h3>
-          <p class="job__text">インフラで、<br class="pc-only">社会を支える。</p>
+          <figure class="job__photo">
+            <img src="images/job-machine-room.png" alt="機械室でタブレットを手に点検する技術者">
+            <figcaption>
+              <h3 class="job__name">土木</h3>
+              <p class="job__text"><span>インフラで、</span><br><span>社会を支える。</span></p>
+            </figcaption>
+          </figure>
           <div class="job__roles">
             <div class="job__role">
               <p class="job__role-name">施工管理</p>
@@ -184,8 +196,13 @@
           </div>
         </div>
         <div class="job__item">
-          <h3 class="job__name">機械・設備</h3>
-          <p class="job__text">建物や空間に息吹し、<br class="pc-only">機能をはぐくむ。</p>
+          <figure class="job__photo">
+            <img src="images/job-hvac-design.png" alt="空調・配管の3Dモデルを見ながら打ち合わせる技術者たち">
+            <figcaption>
+              <h3 class="job__name">機械・設備</h3>
+              <p class="job__text"><span>建物や空間に息吹し、</span><br><span>機能をはぐくむ。</span></p>
+            </figcaption>
+          </figure>
           <div class="job__roles">
             <div class="job__role">
               <p class="job__role-name">設備管理</p>
@@ -239,25 +256,30 @@
 
     <!-- ===== 08 FLOW ===== -->
     <section class="flow">
-      <p class="label flow__label">FLOW</p>
-      <h2 class="flow__title">まずは、<br class="sp-only">知ることから。</h2>
-      <ol class="flow__list reveal-steps">
-        <li class="flow__step">
-          <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">edit_note</span></span>エントリー
-        </li>
-        <li class="flow__arrow" aria-hidden="true">→</li>
-        <li class="flow__step">
-          <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">groups</span></span>説明会
-        </li>
-        <li class="flow__arrow" aria-hidden="true">→</li>
-        <li class="flow__step">
-          <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">fact_check</span></span>選考
-        </li>
-        <li class="flow__arrow" aria-hidden="true">→</li>
-        <li class="flow__step">
-          <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">handshake</span></span>内定
-        </li>
-      </ol>
+      <img src="images/flow-bridge.png" alt="" class="flow__bg" aria-hidden="true">
+      <div class="flow__card">
+        <div class="flow__inner">
+          <p class="label flow__label">FLOW</p>
+          <h2 class="flow__title">まずは、<br class="sp-only">知ることから。</h2>
+          <ol class="flow__list reveal-steps">
+            <li class="flow__step">
+              <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">edit_note</span></span>エントリー
+            </li>
+            <li class="flow__arrow" aria-hidden="true">→</li>
+            <li class="flow__step">
+              <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">groups</span></span>説明会
+            </li>
+            <li class="flow__arrow" aria-hidden="true">→</li>
+            <li class="flow__step">
+              <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">fact_check</span></span>選考
+            </li>
+            <li class="flow__arrow" aria-hidden="true">→</li>
+            <li class="flow__step">
+              <span class="flow__icon"><span class="material-symbols-outlined" aria-hidden="true">handshake</span></span>内定
+            </li>
+          </ol>
+        </div>
+      </div>
     </section>
 
     <!-- ===== 09 FAQ ===== -->
